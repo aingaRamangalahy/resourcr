@@ -35,8 +35,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Topic } from "~/types/resource";
-
+import type { Topic } from "~/types/topic";
 const topics: Topic[] = [
   {
     id: "javascript",

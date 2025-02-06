@@ -14,10 +14,3 @@ export interface Resource {
 
 export type ResourceType = Resource["type"];
 export type DifficultyLevel = Resource["difficulty"];
-
-export interface Topic {
-  id: string;
-  name: string;
-  icon: string;
-  description: string;
-}

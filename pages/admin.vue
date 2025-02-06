@@ -78,7 +78,7 @@
 
 <script setup lang="ts">
 import { useResourcesStore } from "~/stores/resources";
-import type { Resource, Topic } from "~/types/resource";
+import type { Resource, Topic } from "~/types";
 
 const store = useResourcesStore();
 
