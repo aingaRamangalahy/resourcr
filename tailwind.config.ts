@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 export default <Config>{
   darkMode: "class",
@@ -13,15 +14,27 @@ export default <Config>{
     extend: {
       container: {
         center: true,
-        // padding: {
-        //     DEFAULT: '1rem',
-        //     sm: '2rem',
-        //     lg: '4rem',
-        //     xl: '4rem',
-        //     '2xl': '6rem',
-        // },
-        // padding: '2rem',
       },
+      textColor: {
+        primary: {
+          DEFAULT: colors.slate[900],
+          dark: colors.slate[100],
+        },
+        secondary: {
+          DEFAULT: colors.slate[600],
+          dark: colors.slate[300],
+        }
+      },
+      backgroundColor: {
+        primary: {
+          DEFAULT: colors.slate[100],
+          dark: colors.slate[900],
+        },
+        secondary: {
+          DEFAULT: colors.slate[200],
+          dark: colors.slate[800],
+        }
+      }
     },
   },
 };

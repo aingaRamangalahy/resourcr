@@ -21,7 +21,7 @@ export const useResourcesStore = defineStore("resources", {
     selectedTags: [],
     searchQuery: "",
     sortBy: "popularity",
-    viewMode: "grid",
+    viewMode: "list",
   }),
 
   getters: {

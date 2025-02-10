@@ -1,9 +1,9 @@
 <template>
   <!-- Sidebar -->
   <div class="w-64 hidden lg:block">
-    <div class="sticky top-[73px] space-y-6">
+    <div class="sticky top-[80px] px-8 space-y-6">
       <div class="space-y-4">
-        <h3 class="font-semibold text-slate-900 dark:text-white">Topics</h3>
+        <h3 class="font-semibold text-primary dark:text-primary-dark">Topics</h3>
         <div class="space-y-2">
           <UCheckbox
             v-for="topic in topics"
@@ -17,7 +17,7 @@
       </div>
 
       <div class="space-y-4">
-        <h3 class="font-semibold text-slate-900 dark:text-white">Type</h3>
+        <h3 class="font-semibold text-primary dark:text-primary-dark">Type</h3>
         <div class="space-y-2">
           <UCheckbox
             v-for="type in resourceTypes"
@@ -31,7 +31,7 @@
       </div>
 
       <div class="space-y-4">
-        <h3 class="font-semibold text-slate-900 dark:text-white">Difficulty</h3>
+        <h3 class="font-semibold text-primary dark:text-primary-dark">Difficulty</h3>
         <div class="space-y-2">
           <UCheckbox
             v-for="level in difficultyLevels"
@@ -45,7 +45,7 @@
       </div>
 
       <div class="space-y-4">
-        <h3 class="font-semibold text-slate-900 dark:text-white">Sort By</h3>
+        <h3 class="font-semibold text-primary dark:text-primary-dark">Sort By</h3>
         <USelect v-model="sortBy" :options="sortOptions" @update:model-value="handleSortChange" />
       </div>
 

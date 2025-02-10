@@ -8,7 +8,7 @@
         <div class="flex-1 flex items-center justify-start">
           <NuxtLink
             to="/"
-            class="text-xl font-bold text-slate-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+            class="text-xl font-bold text-primary dark:text-primary-dark"
           >
             <!-- Left space for balance -->
           </NuxtLink>
@@ -18,7 +18,7 @@
         <div class="flex-1 flex items-center justify-center">
           <NuxtLink
             to="/"
-            class="text-xl font-bold text-slate-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+            class="text-xl font-bold text-primary dark:text-primary-dark"
           >
             Resourcr
           </NuxtLink>
