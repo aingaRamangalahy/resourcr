@@ -6,13 +6,17 @@
         base: 'w-full h-full',
       },
     }"
-    class="flex gap-6 transition-all duration-200 hover:shadow-lg w-full h-full cursor-pointer"
+    class="flex gap-6 hover:shadow-lg w-full h-full cursor-pointer"
   >
     <div class="flex-1 h-full">
       <div class="flex items-start justify-between mb-4 h-[20%]">
         <div>
-          <h3 class="font-semibold text-primary dark:text-primary-dark text-lg flex items-center gap-2">
-            <UIcon :name="typeIcon" class="w-5 h-5 text-secondary dark:text-secondary-dark" />
+          <h3
+            class="font-semibold text-primary dark:text-primary-dark text-lg flex items-center gap-2"
+          >
+            <UTooltip :text="resource.type" :popper="{ placement: 'top' }">
+              <UIcon :name="typeIcon" class="w-5 h-5 text-secondary dark:text-secondary-dark" />
+            </UTooltip>
             {{ resource.title }}
           </h3>
           <p class="text-sm text-secondary dark:text-secondary-dark">

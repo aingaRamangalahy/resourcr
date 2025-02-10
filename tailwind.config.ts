@@ -23,7 +23,7 @@ export default <Config>{
         secondary: {
           DEFAULT: colors.slate[600],
           dark: colors.slate[300],
-        }
+        },
       },
       backgroundColor: {
         primary: {
@@ -33,8 +33,8 @@ export default <Config>{
         secondary: {
           DEFAULT: colors.slate[200],
           dark: colors.slate[800],
-        }
-      }
+        },
+      },
     },
   },
 };

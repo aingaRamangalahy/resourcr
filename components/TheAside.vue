@@ -49,7 +49,15 @@
         <USelect v-model="sortBy" :options="sortOptions" @update:model-value="handleSortChange" />
       </div>
 
-      <UButton color="gray" variant="soft" block @click="clearFilters"> Clear Filters </UButton>
+      <UButton
+        color="gray"
+        class="bg-secondary dark:bg-secondary-dark"
+        variant="soft"
+        block
+        @click="clearFilters"
+      >
+        Clear Filters
+      </UButton>
     </div>
   </div>
 </template>

@@ -6,20 +6,14 @@
       <div class="flex items-center justify-between h-16">
         <!-- Left section -->
         <div class="flex-1 flex items-center justify-start">
-          <NuxtLink
-            to="/"
-            class="text-xl font-bold text-primary dark:text-primary-dark"
-          >
+          <NuxtLink to="/" class="text-xl font-bold text-primary dark:text-primary-dark">
             <!-- Left space for balance -->
           </NuxtLink>
         </div>
 
         <!-- Center logo -->
         <div class="flex-1 flex items-center justify-center">
-          <NuxtLink
-            to="/"
-            class="text-xl font-bold text-primary dark:text-primary-dark"
-          >
+          <NuxtLink to="/" class="text-xl font-bold text-primary dark:text-primary-dark">
             Resourcr
           </NuxtLink>
         </div>

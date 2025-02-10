@@ -1,6 +1,6 @@
 <template>
   <TheHeader />
-  <div class="flex  bg-white dark:bg-slate-900">
+  <div class="flex bg-white dark:bg-slate-900">
     <TheAside />
     <div class="flex-1 p-4">
       <slot />
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from "vue";
 
 const asideVisible = ref(false);
 
