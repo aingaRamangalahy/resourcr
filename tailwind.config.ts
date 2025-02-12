@@ -27,14 +27,20 @@ export default <Config>{
       },
       backgroundColor: {
         primary: {
-          DEFAULT: colors.slate[100],
+          DEFAULT: colors.white,
           dark: colors.slate[900],
         },
         secondary: {
-          DEFAULT: colors.slate[200],
-          dark: colors.slate[800],
+          DEFAULT: colors.white,
+          dark: colors.gray[900],
         },
       },
+      borderColor: {
+        primary: {
+          DEFAULT: colors.gray[200],
+          dark: colors.gray[800],
+        }
+      }
     },
   },
 };

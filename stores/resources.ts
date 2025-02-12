@@ -73,9 +73,6 @@ export const useResourcesStore = defineStore("resources", {
   },
 
   actions: {
-    setViewMode(mode: "grid" | "list") {
-      this.viewMode = mode;
-    },
     setSortBy(sort: "popularity" | "date" | "title") {
       this.sortBy = sort;
     },

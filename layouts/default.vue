@@ -1,6 +1,6 @@
 <template>
   <TheHeader />
-  <div class="flex bg-white dark:bg-slate-900">
+  <div class="flex bg-primary dark:bg-primary-dark">
     <TheAside />
     <div class="flex-1 p-4">
       <slot />

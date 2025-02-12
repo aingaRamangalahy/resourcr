@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900"
+    class="sticky top-0 z-50 border-b border-primary dark:border-primary-dark bg-primary dark:bg-primary-dark"
   >
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -14,7 +14,7 @@
         <!-- Center logo -->
         <div class="flex-1 flex items-center justify-center">
           <NuxtLink to="/" class="text-xl font-bold text-primary dark:text-primary-dark">
-            Resourcr
+            Resourcr.dev
           </NuxtLink>
         </div>
 

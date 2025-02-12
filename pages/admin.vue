@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white dark:bg-slate-900">
+  <div class="min-h-screen bg-primary dark:bg-primary-dark">
     <div class="container mx-auto px-4 py-8">
       <template v-if="!isAuthenticated">
         <div class="max-w-md mx-auto">

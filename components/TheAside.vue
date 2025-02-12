@@ -3,7 +3,7 @@
   <div class="w-64 hidden lg:block">
     <div class="sticky top-[80px] px-8 space-y-6">
       <div class="space-y-4">
-        <h3 class="font-semibold text-primary dark:text-primary-dark">Topics</h3>
+        <h3 class="font-semibold text-primary dark:text-primary-dark">Categories</h3>
         <div class="space-y-2">
           <UCheckbox
             v-for="topic in topics"
