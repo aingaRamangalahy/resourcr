@@ -1,0 +1,124 @@
+{
+    "resources": [
+      {
+        "title": "JavaScript: The Hard Parts",
+        "description": "Advanced JavaScript concepts including closures, prototypes, and asynchronous patterns with detailed explanations of how JavaScript works under the hood.",
+        "url": "https://frontendmasters.com/courses/javascript-hard-parts-v2/",
+        "type": "course",
+        "difficulty": "advanced",
+        "topics": ["javascript"],
+        "tags": ["closures", "async", "prototypes", "functions"],
+        "popularity": 9500,
+        "addedAt": "2024-01-15",
+        "provider": "Frontend Masters"
+      },
+      {
+        "title": "TypeScript Deep Dive",
+        "description": "Comprehensive guide to TypeScript including advanced type system features, compiler API, and real-world patterns.",
+        "url": "https://basarat.gitbook.io/typescript/",
+        "type": "documentation",
+        "difficulty": "intermediate",
+        "topics": ["typescript"],
+        "tags": ["types", "compiler", "javascript"],
+        "popularity": 8200,
+        "addedAt": "2024-02-01",
+        "provider": "Basarat Ali Syed"
+      },
+      {
+        "title": "React Pattern Library",
+        "description": "Learn advanced React patterns including hooks, context, suspense, and server components with practical examples.",
+        "url": "https://reactpatterns.com/",
+        "type": "documentation",
+        "difficulty": "intermediate",
+        "topics": ["react", "typescript"],
+        "tags": ["hooks", "patterns", "components"],
+        "popularity": 7800,
+        "addedAt": "2024-02-10",
+        "provider": "React Patterns"
+      },
+      {
+        "title": "Vue.js 3 Composition API",
+        "description": "Interactive course on Vue 3's Composition API, covering setup, reactivity, lifecycles, and best practices.",
+        "url": "https://www.vuemastery.com/courses/vue-3-composition-api/",
+        "type": "interactive",
+        "difficulty": "intermediate",
+        "topics": ["vue"],
+        "tags": ["composition-api", "setup", "vue3"],
+        "popularity": 6500,
+        "addedAt": "2024-01-20",
+        "provider": "Vue Mastery"
+      },
+      {
+        "title": "Angular Enterprise Architecture",
+        "description": "Comprehensive guide to building scalable Angular applications with NgRx, RxJS, and modern architectural patterns.",
+        "url": "https://www.pluralsight.com/courses/angular-architecture-best-practices",
+        "type": "course",
+        "difficulty": "advanced",
+        "topics": ["angular", "typescript"],
+        "tags": ["ngrx", "rxjs", "architecture"],
+        "popularity": 5900,
+        "addedAt": "2024-02-05",
+        "provider": "Pluralsight"
+      },
+      {
+        "title": "Svelte Interactive Tutorial",
+        "description": "Official Svelte tutorial covering reactivity, stores, animations, and component composition through interactive exercises.",
+        "url": "https://svelte.dev/tutorial",
+        "type": "interactive",
+        "difficulty": "beginner",
+        "topics": ["svelte"],
+        "tags": ["components", "reactivity", "animations"],
+        "popularity": 4800,
+        "addedAt": "2024-01-25",
+        "provider": "Svelte"
+      },
+      {
+        "title": "Node.js Best Practices",
+        "description": "Comprehensive guide to Node.js production practices, including security, performance, architecture, and testing.",
+        "url": "https://github.com/goldbergyoni/nodebestpractices",
+        "type": "documentation",
+        "difficulty": "intermediate",
+        "topics": ["node", "javascript"],
+        "tags": ["security", "performance", "testing"],
+        "popularity": 8900,
+        "addedAt": "2024-02-15",
+        "provider": "GitHub"
+      },
+      {
+        "title": "Full Stack TypeScript",
+        "description": "Build full-stack applications with TypeScript, covering both frontend frameworks and Node.js backend development.",
+        "url": "https://www.newline.co/fullstack-typescript",
+        "type": "course",
+        "difficulty": "intermediate",
+        "topics": ["typescript", "node", "react"],
+        "tags": ["full-stack", "web-development"],
+        "popularity": 6200,
+        "addedAt": "2024-02-18",
+        "provider": "Newline"
+      },
+      {
+        "title": "The Modern JavaScript Tutorial",
+        "description": "From basics to advanced topics with simple, but detailed explanations including latest language features.",
+        "url": "https://javascript.info/",
+        "type": "documentation",
+        "difficulty": "beginner",
+        "topics": ["javascript"],
+        "tags": ["fundamentals", "es6+", "dom"],
+        "popularity": 12500,
+        "addedAt": "2024-01-10",
+        "provider": "JavaScript.info"
+      },
+      {
+        "title": "React Native - The Practical Guide",
+        "description": "Comprehensive course on building native mobile applications with React Native and TypeScript.",
+        "url": "https://www.udemy.com/course/react-native-the-practical-guide/",
+        "type": "video",
+        "difficulty": "intermediate",
+        "topics": ["react", "typescript"],
+        "tags": ["mobile", "ios", "android"],
+        "popularity": 7300,
+        "addedAt": "2024-02-20",
+        "provider": "Udemy"
+      }
+    ]
+  }

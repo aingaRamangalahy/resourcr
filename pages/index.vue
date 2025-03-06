@@ -9,7 +9,7 @@
           <div class="space-y-4">
             <ResourceCard
               v-for="resource in filteredResources"
-              :key="resource.id"
+              :key="resource.addedAt"
               :resource="resource"
             />
           </div>
@@ -21,6 +21,10 @@
 
 <script setup lang="ts">
 const store = useResourcesStore();
+
+onBeforeMount(async () => {
+  await store.fetchResources();
+});
 
 // Initialize with default values from the store
 const filteredResources = computed(() => store.filteredResources);

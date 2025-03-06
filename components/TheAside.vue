@@ -3,7 +3,7 @@
   <div class="w-64 hidden lg:block">
     <div class="sticky top-[80px] px-8 space-y-6">
       <div class="space-y-4">
-        <h3 class="font-semibold text-primary dark:text-primary-dark">Categories</h3>
+        <h3 class="font-semibold text-primary dark:text-primary-dark">Topics</h3>
         <div class="space-y-2">
           <UCheckbox
             v-for="topic in topics"
@@ -75,50 +75,8 @@ const selectedTopics = ref<string[]>([]);
 
 const sortBy = ref<string>("popularity");
 
-const topics: Topic[] = [
-  {
-    id: "javascript",
-    name: "JavaScript",
-    icon: "i-logos-javascript",
-    description: "Learn modern JavaScript",
-  },
-  {
-    id: "typescript",
-    name: "TypeScript",
-    icon: "i-logos-typescript-icon",
-    description: "Master TypeScript",
-  },
-  {
-    id: "react",
-    name: "React",
-    icon: "i-logos-react",
-    description: "Build with React",
-  },
-  {
-    id: "vue",
-    name: "Vue.js",
-    icon: "i-logos-vue",
-    description: "Create with Vue",
-  },
-  {
-    id: "angular",
-    name: "Angular",
-    icon: "i-logos-angular-icon",
-    description: "Develop with Angular",
-  },
-  {
-    id: "svelte",
-    name: "Svelte",
-    icon: "i-logos-svelte-icon",
-    description: "Build with Svelte",
-  },
-  {
-    id: "node",
-    name: "Node.js",
-    icon: "i-logos-nodejs-icon",
-    description: "Server-side JavaScript",
-  },
-];
+const { data } = await useAsyncData('topics', () => queryCollection('topics').first());
+const topics = computed(() => data.value?.topics as Topic[] || []);
 
 const resourceTypes = [
   { label: "Video", value: "video" },

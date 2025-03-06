@@ -60,7 +60,7 @@ export const useResourcesStore = defineStore("resources", {
           break;
         case "date":
           filtered.sort(
-            (a, b) => new Date(b.dateAdded).getTime() - new Date(a.dateAdded).getTime()
+            (a, b) => new Date(b.addedAt).getTime() - new Date(a.addedAt).getTime()
           );
           break;
         case "title":
@@ -73,6 +73,16 @@ export const useResourcesStore = defineStore("resources", {
   },
 
   actions: {
+    async fetchResources() {
+      const { data } = await useAsyncData('resources', () =>
+        queryCollection('resources').first()
+      );
+      this.resources = data.value?.resources.map((resource: any) => ({
+        ...resource,
+        type: resource.type as ResourceType,
+        difficulty: resource.difficulty as DifficultyLevel,
+      })) || [];
+    },
     setSortBy(sort: "popularity" | "date" | "title") {
       this.sortBy = sort;
     },
@@ -85,19 +95,9 @@ export const useResourcesStore = defineStore("resources", {
     setSelectedDifficulties(difficulties: DifficultyLevel[]) {
       this.selectedDifficulties = difficulties;
     },
-    toggleTag(tag: string) {
-      const index = this.selectedTags.indexOf(tag);
-      if (index === -1) {
-        this.selectedTags.push(tag);
-      } else {
-        this.selectedTags.splice(index, 1);
-      }
-    },
+
     setSearchQuery(query: string) {
       this.searchQuery = query;
-    },
-    addResource(resource: Resource) {
-      this.resources.push(resource);
     },
     clearFilters() {
       this.selectedTopics = [];

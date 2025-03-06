@@ -7,6 +7,7 @@
       },
     }"
     class="flex gap-6 hover:shadow-lg w-full h-full cursor-pointer"
+    @click="navigateToResource(resource.url)"
   >
     <div class="flex-1 h-full">
       <div class="flex items-start justify-between mb-4 h-[20%]">
@@ -79,4 +80,7 @@ const difficultyColor = computed(() => {
       return "gray";
   }
 });
+
+const navigateToResource = (url: string) =>
+  window.open(url, "_blank", "noopener,noreferrer");
 </script>

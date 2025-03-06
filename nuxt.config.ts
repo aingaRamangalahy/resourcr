@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: false },
-  modules: ["@nuxt/ui", "@nuxtjs/color-mode", "@pinia/nuxt", "@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxtjs/color-mode",
+    "@pinia/nuxt",
+    "@nuxtjs/tailwindcss",
+    "@nuxt/content",
+  ],
   tailwindcss: {
     cssPath: "~/assets/styles/tailwind.scss",
   },

@@ -1,5 +1,4 @@
 export interface Resource {
-  id: string;
   title: string;
   description: string;
   url: string;
@@ -8,9 +7,12 @@ export interface Resource {
   topics: string[];
   tags: string[];
   popularity: number;
-  dateAdded: string;
+  addedAt: string;
   provider: string;
 }
 
 export type ResourceType = Resource["type"];
 export type DifficultyLevel = Resource["difficulty"];
+
+export const resourceTypes: ResourceType[] = ["video", "blog", "interactive", "documentation", "course"] as const;
+export const difficultyLevels: DifficultyLevel[] = ["beginner", "intermediate", "advanced"] as const;
