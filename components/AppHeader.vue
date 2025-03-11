@@ -20,14 +20,6 @@
 
         <!-- Right section -->
         <div class="flex-1 flex items-center justify-end space-x-4">
-          <UInput
-            v-if="$route.path === '/resources'"
-            v-model="searchQuery"
-            icon="i-heroicons-magnifying-glass"
-            placeholder="Search resources..."
-            class="w-64"
-            @input="handleSearch"
-          />
           <UButton
             :icon="
               colorMode.value === 'dark' ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'
@@ -44,13 +36,7 @@
 </template>
 
 <script setup lang="ts">
-const searchQuery = ref("");
-const store = useResourcesStore();
 const colorMode = useColorMode();
-
-const handleSearch = () => {
-  store.setSearchQuery(searchQuery.value);
-};
 
 const toggleColorMode = () => {
   colorMode.preference = colorMode.value === "dark" ? "light" : "dark";

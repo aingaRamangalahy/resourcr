@@ -81,6 +81,5 @@ const difficultyColor = computed(() => {
   }
 });
 
-const navigateToResource = (url: string) =>
-  window.open(url, "_blank", "noopener,noreferrer");
+const navigateToResource = (url: string) => window.open(url, "_blank", "noopener,noreferrer");
 </script>

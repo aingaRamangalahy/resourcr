@@ -1,4 +1,4 @@
-import { defineContentConfig, defineCollection, z } from '@nuxt/content'
+import { defineContentConfig, defineCollection, z } from "@nuxt/content";
 
 const resourceCollection = defineCollection({
   type: "data",
@@ -6,11 +6,12 @@ const resourceCollection = defineCollection({
   schema: z.object({
     resources: z.array(
       z.object({
+        id: z.string(),
         title: z.string(),
         description: z.string(),
         topics: z.array(z.string()),
-        type: z.string(),
-        difficulty: z.string(),
+        type: z.enum(["video", "blog", "interactive", "documentation", "course"]),
+        difficulty: z.enum(["beginner", "intermediate", "advanced"]),
         tags: z.array(z.string()),
         addedAt: z.string(),
         popularity: z.number(),
@@ -21,12 +22,33 @@ const resourceCollection = defineCollection({
   }),
 });
 
+const categoryCollection = defineCollection({
+  type: "data",
+  source: "categories.json",
+  schema: z.object({
+    categories: z.array(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        icon: z.string(),
+        subcategories: z.array(
+          z.object({
+            id: z.string(),
+            name: z.string(),
+            topics: z.array(z.string()),
+          })
+        ),
+      })
+    ),
+  }),
+});
+
 const topicCollection = defineCollection({
   type: "data",
   source: "topics.json",
   schema: z.object({
     topics: z.array(
-        z.object({
+      z.object({
         id: z.string(),
         name: z.string(),
         description: z.string(),
@@ -38,6 +60,7 @@ const topicCollection = defineCollection({
 export default defineContentConfig({
   collections: {
     resources: resourceCollection,
-    topics: topicCollection
+    topics: topicCollection,
+    categories: categoryCollection,
   },
 });

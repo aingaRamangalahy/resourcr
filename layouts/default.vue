@@ -1,34 +1,20 @@
 <template>
-  <TheHeader />
-  <div class="flex bg-primary dark:bg-primary-dark">
-    <TheAside />
-    <div class="flex-1 p-4">
-      <slot />
+  <div class="min-h-screen flex flex-col bg-white dark:bg-gray-900">
+    <!-- Header component -->
+    <AppHeader />
+
+    <!-- Main content -->
+    <div class="flex-grow flex">
+      <!-- Sidebar for larger screens -->
+      <CategoriesFilter class="hidden lg:block" />
+
+      <!-- Main content area -->
+      <main class="flex-grow p-4">
+        <slot />
+      </main>
     </div>
+
+    <CategoriesFilterMobile />
   </div>
-  <button
-    @click="toggleAside"
-    class="fixed bottom-4 right-4 lg:hidden bg-primary-500 text-white p-2 rounded-full shadow-lg"
-  >
-    <span v-if="asideVisible">Hide</span>
-    <span v-else>Show</span>
-  </button>
 </template>
 
-<script setup lang="ts">
-import { ref } from "vue";
-
-const asideVisible = ref(false);
-
-const toggleAside = () => {
-  asideVisible.value = !asideVisible.value;
-};
-</script>
-
-<style scoped>
-@media (max-width: 1024px) {
-  .aside-visible {
-    display: block !important;
-  }
-}
-</style>

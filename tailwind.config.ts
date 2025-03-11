@@ -39,8 +39,8 @@ export default <Config>{
         primary: {
           DEFAULT: colors.gray[200],
           dark: colors.gray[800],
-        }
-      }
+        },
+      },
     },
   },
 };

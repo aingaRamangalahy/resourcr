@@ -1,0 +1,111 @@
+$scrollbar-width: 8px;
+$scrollbar-height: 8px;
+$scrollbar-radius: 10px;
+$scrollbar-border: 2px;
+
+// Light mode colors
+$thumb-color-light: rgba(156, 163, 175, 0.5);
+$thumb-hover-color-light: rgba(107, 114, 128, 0.7);
+$track-color-light: transparent;
+
+// Dark mode colors
+$thumb-color-dark: rgba(75, 85, 99, 0.5);
+$thumb-hover-color-dark: rgba(107, 114, 128, 0.8);
+$track-color-dark: rgba(31, 41, 55, 0.1);
+
+// Base styles for all browsers
+* {
+  /* Firefox scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: $thumb-color-light $track-color-light;
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) scrollbar styling */
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+  height: $scrollbar-height;
+
+  &-track {
+    background: $track-color-light;
+    border-radius: $scrollbar-radius;
+  }
+
+  &-thumb {
+    background-color: $thumb-color-light;
+    border-radius: $scrollbar-radius;
+    border: $scrollbar-border solid transparent;
+    background-clip: content-box;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $thumb-hover-color-light;
+    }
+  }
+}
+
+/* Dark mode scrollbar styles */
+.dark {
+  * {
+    scrollbar-color: $thumb-color-dark $track-color-dark;
+  }
+
+  ::-webkit-scrollbar {
+    &-track {
+      background: $track-color-dark;
+    }
+
+    &-thumb {
+      background-color: $thumb-color-dark;
+
+      &:hover {
+        background-color: $thumb-hover-color-dark;
+      }
+    }
+  }
+}
+
+/* Themed scrollbars */
+.scrollbar-primary {
+  $primary-thumb: rgba(79, 70, 229, 0.5);
+  $primary-thumb-hover: rgba(79, 70, 229, 0.7);
+
+  scrollbar-color: $primary-thumb transparent !important;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-thumb;
+
+    &:hover {
+      background-color: $primary-thumb-hover;
+    }
+  }
+}
+
+.scrollbar-secondary {
+  $secondary-thumb: rgba(249, 115, 22, 0.5);
+  $secondary-thumb-hover: rgba(249, 115, 22, 0.7);
+
+  scrollbar-color: $secondary-thumb transparent !important;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $secondary-thumb;
+
+    &:hover {
+      background-color: $secondary-thumb-hover;
+    }
+  }
+}
+
+.scrollbar-success {
+  $success-thumb: rgba(34, 197, 94, 0.5);
+  $success-thumb-hover: rgba(34, 197, 94, 0.7);
+
+  scrollbar-color: $success-thumb transparent !important;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $success-thumb;
+
+    &:hover {
+      background-color: $success-thumb-hover;
+    }
+  }
+}

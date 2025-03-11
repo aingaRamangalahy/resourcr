@@ -1,46 +1,370 @@
 {
-    "topics": [
-      {
-        "id": "javascript",
-        "name": "JavaScript",
-        "icon": "i-logos-javascript",
-        "description": "Learn modern JavaScript"
-      },
-      {
-        "id": "typescript",
-        "name": "TypeScript",
-        "icon": "i-logos-typescript-icon",
-        "description": "Master TypeScript"
-      },
-      {
-        "id": "react",
-        "name": "React",
-        "icon": "i-logos-react",
-        "description": "Build with React"
-      },
-      {
-        "id": "vue",
-        "name": "Vue.js",
-        "icon": "i-logos-vue",
-        "description": "Create with Vue"
-      },
-      {
-        "id": "angular",
-        "name": "Angular",
-        "icon": "i-logos-angular-icon",
-        "description": "Develop with Angular"
-      },
-      {
-        "id": "svelte",
-        "name": "Svelte",
-        "icon": "i-logos-svelte-icon",
-        "description": "Build with Svelte"
-      },
-      {
-        "id": "node",
-        "name": "Node.js",
-        "icon": "i-logos-nodejs-icon",
-        "description": "Server-side JavaScript"
-      }
-    ]
+  "topics": [
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "description": "A high-level, interpreted programming language that is one of the core technologies of the web.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "description": "A strongly typed programming language that builds on JavaScript.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "vue",
+      "name": "Vue",
+      "description": "A progressive JavaScript framework for building user interfaces.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "description": "A platform and framework for building single-page client applications.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "description": "A compiler that takes your declarative components and converts them into efficient JavaScript.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "html-css",
+      "name": "HTML & CSS",
+      "description": "The standard markup language and styling for creating web pages.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "node",
+      "name": "Node.js",
+      "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+      "icon": "i-heroicons-server"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "description": "A high-level, versatile programming language known for its readability.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "description": "A class-based, object-oriented programming language designed for portability.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "description": "A dynamic, open source programming language focused on simplicity and productivity.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "description": "A popular general-purpose scripting language for web development.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "description": "A statically typed, compiled language designed at Google.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "api-design",
+      "name": "API Design",
+      "description": "Principles and best practices for designing application programming interfaces.",
+      "icon": "i-heroicons-rectangle-stack"
+    },
+    {
+      "id": "data-structures",
+      "name": "Data Structures",
+      "description": "Ways of organizing and storing data for efficient access and modification.",
+      "icon": "i-heroicons-squares-2x2"
+    },
+    {
+      "id": "algorithm-design",
+      "name": "Algorithm Design",
+      "description": "Techniques for creating step-by-step procedures for calculations and data processing.",
+      "icon": "i-heroicons-chart-bar"
+    },
+    {
+      "id": "complexity",
+      "name": "Complexity Analysis",
+      "description": "Study of the efficiency of algorithms and their resource requirements.",
+      "icon": "i-heroicons-clock"
+    },
+    {
+      "id": "oop",
+      "name": "Object-Oriented Programming",
+      "description": "Programming paradigm based on the concept of objects and classes.",
+      "icon": "i-heroicons-cube"
+    },
+    {
+      "id": "functional-programming",
+      "name": "Functional Programming",
+      "description": "Programming paradigm that treats computation as the evaluation of mathematical functions.",
+      "icon": "i-heroicons-function"
+    },
+    {
+      "id": "design-patterns",
+      "name": "Design Patterns",
+      "description": "Reusable solutions to commonly occurring problems in software design.",
+      "icon": "i-heroicons-template"
+    },
+    {
+      "id": "architecture",
+      "name": "Software Architecture",
+      "description": "High-level structures of a software system and the discipline of creating them.",
+      "icon": "i-heroicons-building-storefront"
+    },
+    {
+      "id": "electron",
+      "name": "Electron",
+      "description": "Framework for building cross-platform desktop applications with web technologies.",
+      "icon": "i-heroicons-desktop-computer"
+    },
+    {
+      "id": "qt",
+      "name": "Qt",
+      "description": "Cross-platform application development framework for desktop and embedded systems.",
+      "icon": "i-heroicons-desktop-computer"
+    },
+    {
+      "id": "dotnet",
+      "name": ".NET",
+      "description": "Free, cross-platform, open-source framework for building modern applications.",
+      "icon": "i-heroicons-desktop-computer"
+    },
+    {
+      "id": "ios",
+      "name": "iOS Development",
+      "description": "Building applications for Apple's mobile operating system.",
+      "icon": "i-heroicons-device-phone-mobile"
+    },
+    {
+      "id": "android",
+      "name": "Android Development",
+      "description": "Building applications for the Android operating system.",
+      "icon": "i-heroicons-device-phone-mobile"
+    },
+    {
+      "id": "react-native",
+      "name": "React Native",
+      "description": "Framework for building native apps using React.",
+      "icon": "i-heroicons-device-phone-mobile"
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "description": "Google's UI toolkit for building natively compiled applications.",
+      "icon": "i-heroicons-device-phone-mobile"
+    },
+    {
+      "id": "unity",
+      "name": "Unity",
+      "description": "Cross-platform game engine developed by Unity Technologies.",
+      "icon": "i-heroicons-play"
+    },
+    {
+      "id": "unreal",
+      "name": "Unreal Engine",
+      "description": "Game engine developed by Epic Games.",
+      "icon": "i-heroicons-play"
+    },
+    {
+      "id": "webgl",
+      "name": "WebGL",
+      "description": "JavaScript API for rendering interactive 3D and 2D graphics within a browser.",
+      "icon": "i-heroicons-play"
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "description": "Cloud computing platform provided by Amazon.",
+      "icon": "i-heroicons-cloud"
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "description": "Cloud computing service created by Microsoft.",
+      "icon": "i-heroicons-cloud"
+    },
+    {
+      "id": "gcp",
+      "name": "Google Cloud Platform",
+      "description": "Cloud computing services provided by Google.",
+      "icon": "i-heroicons-cloud"
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "description": "Open source automation server for continuous integration and delivery.",
+      "icon": "i-heroicons-cog"
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub Actions",
+      "description": "GitHub's built-in continuous integration and deployment tool.",
+      "icon": "i-heroicons-cog"
+    },
+    {
+      "id": "gitlab-ci",
+      "name": "GitLab CI/CD",
+      "description": "GitLab's continuous integration and deployment tool.",
+      "icon": "i-heroicons-cog"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "description": "Platform for developing, shipping, and running applications in containers.",
+      "icon": "i-heroicons-cube-transparent"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "description": "Open-source system for automating deployment, scaling, and management of containerized applications.",
+      "icon": "i-heroicons-cube-transparent"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "description": "Standard language for storing, manipulating and retrieving data in databases.",
+      "icon": "i-heroicons-database"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "description": "Open source object-relational database system.",
+      "icon": "i-heroicons-database"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "description": "Open-source relational database management system.",
+      "icon": "i-heroicons-database"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "description": "Source-available cross-platform document-oriented database program.",
+      "icon": "i-heroicons-database"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "description": "In-memory data structure store, used as a distributed, in-memory key–value database.",
+      "icon": "i-heroicons-database"
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "description": "Search and analytics engine based on Lucene library.",
+      "icon": "i-heroicons-database"
+    },
+    {
+      "id": "database-design",
+      "name": "Database Design",
+      "description": "Process of producing a detailed data model of a database.",
+      "icon": "i-heroicons-table-cells"
+    },
+    {
+      "id": "query-optimization",
+      "name": "Query Optimization",
+      "description": "The process of improving database query performance.",
+      "icon": "i-heroicons-arrow-trending-up"
+    },
+    {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "description": "Part of machine learning based on artificial neural networks.",
+      "icon": "i-heroicons-brain"
+    },
+    {
+      "id": "nlp",
+      "name": "Natural Language Processing",
+      "description": "Field of AI focused on the interaction between computers and human language.",
+      "icon": "i-heroicons-chat-bubble-bottom"
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision",
+      "description": "Field of AI that enables computers to derive meaningful information from digital images and videos.",
+      "icon": "i-heroicons-eye"
+    },
+    {
+      "id": "r",
+      "name": "R Programming",
+      "description": "Programming language for statistical computing and graphics.",
+      "icon": "i-heroicons-chart-pie"
+    },
+    {
+      "id": "data-visualization",
+      "name": "Data Visualization",
+      "description": "Graphical representation of information and data.",
+      "icon": "i-heroicons-presentation-chart-line"
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "description": "Process of defining the architecture, interfaces, and data for a system.",
+      "icon": "i-heroicons-clipboard-document-list"
+    },
+    {
+      "id": "coding-challenges",
+      "name": "Coding Challenges",
+      "description": "Programming exercises aimed at improving skills and problem-solving abilities.",
+      "icon": "i-heroicons-code-bracket-square"
+    },
+    {
+      "id": "roadmaps",
+      "name": "Learning Roadmaps",
+      "description": "Structured paths for learning specific technologies or skills.",
+      "icon": "i-heroicons-map"
+    },
+    {
+      "id": "career-guides",
+      "name": "Career Guides",
+      "description": "Resources for career advancement in tech.",
+      "icon": "i-heroicons-briefcase"
+    },
+    {
+      "id": "forums",
+      "name": "Forums & Communities",
+      "description": "Online platforms for developers to discuss and share knowledge.",
+      "icon": "i-heroicons-user-group"
+    },
+    {
+      "id": "meetups",
+      "name": "Meetups",
+      "description": "In-person or virtual gatherings of developers with similar interests.",
+      "icon": "i-heroicons-user-group"
+    },
+    {
+      "id": "conferences",
+      "name": "Conferences",
+      "description": "Large gatherings focused on specific technologies or domains.",
+      "icon": "i-heroicons-building-office-2"
+    },
+    {
+      "id": "nuxt",
+      "name": "Nuxt.js",
+      "description": "Framework for building server-side rendered Vue.js applications.",
+      "icon": "i-heroicons-code-bracket"
+    },
+    {
+      "id": "next",
+      "name": "Next.js",
+      "description": "Framework for building server-side rendered React applications.",
+      "icon": "i-heroicons-code-bracket"
+    }
+  ]
 }

@@ -1,0 +1,153 @@
+{
+  "categories": [
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "icon": "i-heroicons-globe-alt",
+      "subcategories": [
+        {
+          "id": "frontend",
+          "name": "Frontend",
+          "topics": ["javascript", "typescript", "react", "vue", "angular", "svelte", "html-css"]
+        },
+        {
+          "id": "backend",
+          "name": "Backend",
+          "topics": ["node", "python", "java", "ruby", "php", "go", "api-design"]
+        },
+        {
+          "id": "full-stack",
+          "name": "Full Stack",
+          "topics": ["Nuxt", "Next"]
+        }
+      ]
+    },
+    {
+      "id": "computer-science",
+      "name": "Computer Science Fundamentals",
+      "icon": "i-heroicons-academic-cap",
+      "subcategories": [
+        {
+          "id": "algorithms",
+          "name": "Algorithms",
+          "topics": ["data-structures", "algorithm-design", "complexity"]
+        },
+        {
+          "id": "programming-paradigms",
+          "name": "Programming Paradigms",
+          "topics": ["oop", "functional-programming"]
+        },
+        {
+          "id": "design-patterns",
+          "name": "Design Patterns",
+          "topics": ["design-patterns", "architecture"]
+        }
+      ]
+    },
+    {
+      "id": "software-engineering",
+      "name": "Software Engineering",
+      "icon": "i-heroicons-computer-desktop",
+      "subcategories": [
+        {
+          "id": "desktop",
+          "name": "Desktop",
+          "topics": ["electron", "qt", "dotnet"]
+        },
+        {
+          "id": "mobile",
+          "name": "Mobile",
+          "topics": ["ios", "android", "react-native", "flutter"]
+        },
+        {
+          "id": "game-development",
+          "name": "Game Development",
+          "topics": ["unity", "unreal", "webgl"]
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps & Infrastructure",
+      "icon": "i-heroicons-server",
+      "subcategories": [
+        {
+          "id": "cloud",
+          "name": "Cloud",
+          "topics": ["aws", "azure", "gcp"]
+        },
+        {
+          "id": "ci-cd",
+          "name": "CI/CD",
+          "topics": ["jenkins", "github-actions", "gitlab-ci"]
+        },
+        {
+          "id": "containerization",
+          "name": "Containerization",
+          "topics": ["docker", "kubernetes"]
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "icon": "i-heroicons-circle-stack",
+      "subcategories": [
+        {
+          "id": "relational",
+          "name": "Relational",
+          "topics": ["sql", "postgresql", "mysql"]
+        },
+        {
+          "id": "nosql",
+          "name": "NoSQL",
+          "topics": ["mongodb", "redis", "elasticsearch"]
+        },
+        {
+          "id": "database-concepts",
+          "name": "Database Concepts",
+          "topics": ["database-design", "query-optimization"]
+        }
+      ]
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science & AI",
+      "icon": "i-heroicons-chart-bar",
+      "subcategories": [
+        {
+          "id": "machine-learning",
+          "name": "Machine Learning",
+          "topics": ["deep-learning", "nlp", "computer-vision"]
+        },
+        {
+          "id": "data-analysis",
+          "name": "Data Analysis",
+          "topics": ["python", "r", "data-visualization"]
+        }
+      ]
+    },
+    {
+      "id": "career-resources",
+      "name": "Career Resources",
+      "icon": "i-heroicons-briefcase",
+      "subcategories": [
+        {
+          "id": "interview-prep",
+          "name": "Interview Prep",
+          "topics": ["algorithms", "system-design", "coding-challenges"]
+        },
+        {
+          "id": "learning-paths",
+          "name": "Learning Paths",
+          "topics": ["roadmaps", "career-guides"]
+        },
+        {
+          "id": "community",
+          "name": "Community",
+          "topics": ["forums", "meetups", "conferences"]
+        }
+      ]
+    }
+  ]
+}
